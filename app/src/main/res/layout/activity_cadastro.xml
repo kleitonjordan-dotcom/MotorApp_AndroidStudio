@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card Formulário de Cadastro de Carro -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="🚗 Cadastrar Novo Carro"
+                    android:textColor="#111111"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="Marca (Ex: Fiat)"
+                    android:inputType="text"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="Modelo (Ex: Onix)"
+                    android:inputType="text"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etAno"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="Ano (Ex: 2022)"
+                    android:inputType="number"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="Placa (Ex: ABC-1234)"
+                    android:inputType="textCapCharacters"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnSalvarVeiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#FFD54F"
+                    android:text="Salvar Carro"
+                    android:textAllCaps="false"
+                    android:textColor="#111111"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Título da Seção de Lista -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="📋 Seus Carros Cadastrados"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Container Onde a Lista de Carros Aparece Dinamicamente -->
+        <LinearLayout
+            android:id="@+id/containerVeiculos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>
