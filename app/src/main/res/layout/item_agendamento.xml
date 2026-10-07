@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título do Pacote -->
+        <TextView
+            android:id="@+id/txtPacoteCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pacote Básico"
+            android:textColor="#111111"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Nome do Veículo -->
+        <TextView
+            android:id="@+id/txtVeiculoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Veículo: Carregando..."
+            android:textColor="#555555"
+            android:textSize="14sp" />
+
+        <!-- Linha com Data e Hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDataCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 A definir"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtHoraCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="⏰ A definir"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Status definido pelo mecânico (Pendente, Confirmado, Em Manutenção...) -->
+        <TextView
+            android:id="@+id/txtStatusCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:text="Pendente"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <!-- Botão de Cancelar -->
+        <Button
+            android:id="@+id/btnCancelarAgendamento"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Cancelar Agendamento"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:cornerRadius="6dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
